@@ -1,0 +1,6 @@
+img.portfolio{
+  position: absolute;
+  display: block;
+  min-width: 100%;
+  width: 100%;
+}
