@@ -14,8 +14,12 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Codrops -->
+    <link href="css/set1.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -58,9 +62,6 @@
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -69,20 +70,9 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Fresh VC</h1>
-                        <p class="intro-text">A seed stage micro VC focused on operations and technology oriented startups.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <header class="intro" id="large-header">
+        <canvas id="demo-canvas" width="1280" height="500"></canvas>
+        <h1 class="main-title">Fresh VC</h1>
     </header>
 
     <!-- About Section -->
@@ -90,48 +80,124 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Fresh VC</h2>
-                <p>Fresh VC is a micro VC fund started by Shri Ganeshram (founder @ FlightCar) and Brian Sheng (formerly @ Shenzen Capital Group, China's largest VC).</p>
+                <p>Fresh VC is a micro VC fund started by Shri Ganeshram (founder @ FlightCar) and Brian Sheng (formerly @ Shenzen Capital Group, China's largest VC). Fresh VC raised its inaugural fund in 2014.</p>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="content-section text-center">
+    <section id="portfolio" class="text-center">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Portfolio</h2>
-                    <p>We're proud to be early investors in marketplace companies Shyp, Bannerman, Eaze, and Unwind.me and technology companies Fiscal Note, Aptible, Gyroscope, and Vessel.</p>
-                    <p>Our portfolio companies and our own companies have raised later rounds from top firms and investors Andreessen Horowitz, First Round Capital, NEA, SV Angel, Softbank Capital, A Grade Investments, Jerry Yang, Ryan Seacrest, Brian Chesky, Tim Ferriss, and Ashton Kutcher, among others. </p>
+                    <p>We're proud to be early investors in several of the most exciting early stage companies.</p>
+                    <p>Our portfolio and our own companies have raised later rounds from top firms and investors such as Andreessen Horowitz, First Round Capital, NEA, SV Angel, Sherpa Ventures, Jerry Yang, Ryan Seacrest, Brian Chesky, Tim Ferriss, and Ashton Kutcher, among others. </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/shyp.jpg">
+                                <figcaption>
+                                    <h2>Shyp</h2>
+                                    <p>The easiest way to ship your stuff</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/fiscal.jpg">
+                                <figcaption>
+                                    <h2>Fiscal Note</h2>
+                                    <p>Data-driven insights for government legislation</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row portfolio-row">
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/aptible.jpg">
+                                <figcaption>
+                                    <h2>Aptible</h2>
+                                    <p>Secure, private PaaS for digital health</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/eaze.jpg">
+                                <figcaption>
+                                    <h2>Eaze</h2>
+                                    <p>Fast and easy medical marijuana delivery</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row portfolio-row">
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/unwind.jpg">
+                                <figcaption>
+                                    <h2>Unwind.me</h2>
+                                    <p>High quality massages in your home</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/vessel.jpg">
+                                <figcaption>
+                                    <h2>Vessel</h2>
+                                    <p>Mobile A/B testing platform</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row portfolio-row">
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/bannerman.jpg">
+                                <figcaption>
+                                    <h2>Bannerman</h2>
+                                    <p>The fastest & easiest way to book private security</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/tidy.jpg">
+                                <figcaption>
+                                    <h2>Tidy</h2>
+                                    <p>Smarter home cleaning service</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row portfolio-row">
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/gyroscope.jpg">
+                                <figcaption>
+                                    <h2>Gyroscope</h2>
+                                    <p>Personal websites powered by your life</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="effect-bubba">
+                                <img class="portfolio" src="./img/luna.jpg">
+                                <figcaption>
+                                    <h2>Luna</h2>
+                                    <p>The smart bed cover for a better night's sleep</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Fresh VC</h2>
-                <p>Feel free to email Brian or Shri at firstname@freshvc.com.</p>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/thefreshvc" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <!-- <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
 
     <!-- Footer -->
     <footer>
