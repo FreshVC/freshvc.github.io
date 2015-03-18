@@ -29,6 +29,10 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+$(document).ready(function() {
+  $('body').removeAttr( 'style' );
+});
+
 // TWEENLITE
 /*!
  * VERSION: 1.13.1
