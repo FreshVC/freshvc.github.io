@@ -42,6 +42,7 @@ p {
         font-size: 20px;
         line-height: 1.6;
     }
+
 }
 
 a {
@@ -326,6 +327,10 @@ ul.banner-social-buttons {
 
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
+    }
+
+    .navbar-custom {
+        display: none;
     }
 }
 
