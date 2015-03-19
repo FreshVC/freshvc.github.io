@@ -36,12 +36,13 @@ p {
     line-height: 1.5;
 }
 
-@media(min-device-width:767px) {
+@media(min-width:767px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
     }
+
 }
 
 a {
@@ -109,7 +110,7 @@ a:focus {
     background-color: rgba(255,255,255,.3);
 }
 
-@media(min-device-width:767px) {
+@media(min-width:767px) {
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
@@ -155,7 +156,7 @@ a:focus {
     font-size: 18px;
 }
 
-@media(min-device-width:767px) {
+@media(min-width:767px) {
     .intro {
         height: 100%;
         padding: 0;
@@ -267,7 +268,7 @@ a:focus {
     margin-top: 100px;
 }
 
-@media(min-device-width:767px) {
+@media(min-width:767px) {
     .content-section {
         padding-top: 250px;
         padding-bottom: 250px;
@@ -311,13 +312,13 @@ ul.banner-social-buttons {
     margin-top: 0;
 }
 
-@media(max-device-width:1199px) {
+@media(max-width:1199px) {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
 }
 
-@media(max-device-width:767px) {
+@media(max-width:767px) {
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
@@ -326,6 +327,10 @@ ul.banner-social-buttons {
 
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
+    }
+
+    .navbar-custom {
+        display: none;
     }
 }
 
@@ -457,7 +462,7 @@ Where header animation starts
     font-weight: 200;
 }
 
-@media only screen and (max-device-width : 768px) {
+@media only screen and (max-width : 768px) {
     .demo-1 .main-title, 
     .demo-3 .main-title,
     .demo-4 .main-title {
@@ -466,6 +471,10 @@ Where header animation starts
 
     .demo-2 .main-title {
         font-size: 4em;
+    }
+
+    nav.navbar{
+        display: none;
     }
 }
 
